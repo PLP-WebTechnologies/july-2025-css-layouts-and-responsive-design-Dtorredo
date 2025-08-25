@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Machine Learning — Responsive Layout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site">
+    <header class="site__header">
+      <div class="brand">
+        <h1>ML Hub</h1>
+        <p class="tag">Exploring Machine Learning Concepts</p>
+      </div>
+
+      <!-- Flexbox Nav -->
+      <nav class="nav" aria-label="Main Navigation">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#">Algorithms</a></li>
+          <li class="nav__item"><a href="#">Datasets</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="site__main">
+      <section class="hero">
+        <h2>Welcome to Machine Learning :D </h2>
+        <p>
+          Machine Learning is a field of Artificial Intelligence that enables 
+          systems to learn patterns from data and make predictions or decisions 
+          without being explicitly programmed.
+        </p>
+        <a class="cta" href="#">Start Learning</a>
+      </section>
+
+      <section class="content">
+        <h3>Key Topics</h3>
+
+        <!-- Cards -->
+        <div class="cards">
+          <article class="card">
+            <h4>Supervised Learning</h4>
+            <p>Learn how models are trained with labeled data to predict outcomes, 
+               such as classification and regression tasks.</p>
+            <a class="card__link" href="#">Explore</a>
+          </article>
+
+          <article class="card">
+            <h4>Unsupervised Learning</h4>
+            <p>Discover techniques like clustering and dimensionality reduction, 
+               where models find hidden patterns in data.</p>
+            <a class="card__link" href="#">Explore</a>
+          </article>
+
+          <article class="card">
+            <h4>Neural Networks</h4>
+            <p>Dive into deep learning, where layered networks simulate the 
+               human brain to handle complex tasks.</p>
+            <a class="card__link" href="#">Explore</a>
+          </article>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="widget">
+          <h4>About</h4>
+          <p>
+            This site introduces core Machine Learning concepts, algorithms, and 
+            practical applications in real-world problems.
+          </p>
+        </div>
+
+        <div class="widget">
+          <h4>Tags</h4>
+          <div class="tags">
+            <span>#AI</span><span>#ML</span><span>#Data</span>
+            <span>#Algorithms</span>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site__footer">
+      <p>&copy; <span id="year"></span> Machine Learning Hub</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
